@@ -185,6 +185,38 @@ a { color: var(--oxblood); }
 /* Faktaruta / skelettfält på åkallan-sidor */
 .field { margin: 1.4rem 0; }
 
+/* Porträtt på Sällskapet (och andra bildfält) */
+.member { margin: 2.2rem 0; }
+.portrait {
+  display: block;
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  background: var(--parchment);
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(28,21,13,0.15);
+  margin-bottom: 0.7rem;
+}
+.member h3 { margin-top: 0; }
+
+figure.plate { margin: 1.8rem 0; }
+figure.plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--gold);
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(28,21,13,0.15);
+}
+figure.plate figcaption {
+  text-align: center;
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
 .callout {
   background: var(--sand-deep);
   border-left: 3px solid var(--oxblood);
