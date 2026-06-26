@@ -279,6 +279,40 @@ figure.plate.tall img {
 }
 .site-footer .key { color: var(--gold); font-size: 1.1rem; }
 
+/* ---------- Lightbox ---------- */
+.lightbox-trigger { cursor: zoom-in; }
+#lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15,10,5,0.92);
+  padding: 2rem;
+  cursor: zoom-out;
+}
+#lightbox.open { display: flex; }
+#lightbox img {
+  max-width: 96vw;
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  border: 1px solid var(--gold);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  border-radius: 2px;
+}
+#lightbox .lb-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.3rem;
+  color: var(--gold-bright);
+  font-family: "Cinzel", serif;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 @media (max-width: 480px) {
   body { font-size: 1.08rem; }
   h1 { font-size: 1.9rem; }
